@@ -16,7 +16,7 @@ class Lab
   end
 
   def is_zero?(num)
-    if num = 0
+    if num == 0
       return true
     else
       return false
@@ -28,11 +28,12 @@ class Lab
   end
 
   def area
-    return calculate_area
-  end
-
-  private
-  def calculate_area
+    # return calculate_area
     return @width * @height
   end
+
+  # private
+  # def calculate_area
+  #   return @width * @height
+  # end
 end
