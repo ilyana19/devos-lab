@@ -8,7 +8,9 @@ class Lab
   end
 
   def less_than_zero?(num)
-    if num < 0
+    if num.class != Fixnum && num.class != Float && num.class != Integer
+      return false
+    elsif num < 0
       return true
     else
       return false
@@ -16,7 +18,7 @@ class Lab
   end
 
   def is_zero?(num)
-    if num = 0
+    if num == 0
       return true
     else
       return false
