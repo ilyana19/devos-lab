@@ -1,5 +1,5 @@
 class Lab
-  attr_reader :name
+  attr_reader :name, :width, :height
 
   def initialize(options = {})
     @name = options[:name] || "Devo's Lab"
@@ -16,7 +16,7 @@ class Lab
   end
 
   def is_zero?(num)
-    if num = 0
+    if num == 0
       return true
     else
       return false
