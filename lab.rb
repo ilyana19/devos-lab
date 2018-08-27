@@ -1,10 +1,10 @@
 class Lab
   attr_reader :name
 
-  def initialize
-    @name = "Devo's Lab"
-    @width = 10
-    @height = 20
+  def initialize(options = {})
+    @name = options[:name] || "Devo's Lab"
+    @width = options[:width] || 10
+    @height = options[:height] || 20
   end
 
   def less_than_zero?(num)
